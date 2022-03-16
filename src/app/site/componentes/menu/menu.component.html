@@ -1,0 +1,34 @@
+<div class="desktop">
+  <div class="container">
+    <div class="main">
+      <div class="menu-desktop">
+        <ul>
+          <li>INICIO</li>
+          <li>QUEM SOU EU</li>
+          <li>GALERIA</li>
+          <li>CONTATO</li>
+          <li>SERVIÇOS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mobile">
+  <div class="container">
+    <div class="main">
+      <div id="sidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn"  (click)="closeMenu()">×</a>
+        <a routerLink="/" id="inicio" (click)="closeMenu()">Inicio</a>
+        <a routerLink="/sobre" id="sobre" (click)="closeMenu()">Sobre</a>
+        <a routerLink="/galeria" id="galeria" (click)="closeMenu()">galeria</a>
+        <a routerLink="/servicos" id="servicos" (click)="closeMenu()">Serviços</a>
+        <a routerLink="/contatos" id="contatos" (click)="closeMenu()">Contatos</a>
+      </div>
+
+      <div class="menu-bar">
+        <a (click)="openMenu()">☰</a>
+      </div>
+    </div>
+  </div>
+</div>
