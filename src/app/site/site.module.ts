@@ -2,10 +2,10 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SiteRoutingModule } from './site-routing.module';
-// import { SharedModule } from '../shared/shared.module';
 import { SiteComponent } from './site.component';
 import { MenuComponent } from './componentes/menu/menu.component';
+
+import { SiteRoutingModule } from './site-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,6 @@ import { MenuComponent } from './componentes/menu/menu.component';
   imports: [
     CommonModule,
     SiteRoutingModule,
-    // SharedModule,
     RouterModule
   ],
 })
