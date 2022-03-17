@@ -1,4 +1,19 @@
+@import "src/assets/styles/variables.scss";
+h1 {
+  font-family: $subtitle;
+  font-size: clamp(1.5em, 1em + 3vw, 4em);
+  text-align: center;
+  font-weight: normal;
+  padding: 22px 0 10px 0;
+  color: $color3;
+}
+h4 {
+  font-family: $subtitle;
+  font-size: clamp(.5em, .7em + 1.25vw, 2em);
+  text-align: center;
+  line-height: 1.75em;
 
+}
 @media only screen and (min-width: 600px) {
   .container {
     display: flex;
@@ -10,5 +25,4 @@
       max-width: 980px;
     }
   }
-
 }
