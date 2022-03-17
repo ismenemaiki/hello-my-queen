@@ -1,39 +1,39 @@
 @import "src/assets/styles/breakpoints.scss";
+@import "src/assets/styles/variables.scss";
+
+a {
+  font-family: $subtitle;
+  color: $color5;
+}
 
 @media only screen and (max-width: 599px) {
   .desktop {
     display: none;
   }
-  .container {
-
-  }
-
   .sidepanel {
-    /* barra lateral do menu */
     width: 0;
     position: fixed;
     top: 0;
     opacity: 0.9;
-    background: #546ef9;
+    background: $color2;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
 
   .sidepanel a {
-    /* itens dentro do menu */
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #f2f2f2;
+    color: $color5;
     display: block;
     transition: 0.2s;
   }
 
   .sidepanel .closebtn {
-    color: #f2f2f2;
+    color: $color5;
     position: absolute;
     top: -10px;
     right: 15px;
@@ -45,12 +45,7 @@
     color: #f2f2f2;
     padding: 10px 15px;
     border: none;
-    background: -webkit-linear-gradient(
-      -45deg,
-      #00eaf3 0%,
-      #546ef9 50%,
-      #8c1cf9 100%
-    );
+    background: $color1;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -63,11 +58,9 @@
     align-items: center;
     justify-content: center;
     height: 60px;
-    background: rgb(190, 17, 176);
-    opacity: 0.7;
+    background: $color1;
   }
   .main {
-    border: 1px solid red;
     width: 80%;
     max-width: 980px;
   }
@@ -77,7 +70,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: #ccc;
   }
 }
 

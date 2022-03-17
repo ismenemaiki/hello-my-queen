@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   }
 
   openMenu() {
-    this.painel.style.width = '75%';
+    this.painel.style.width = '45%';
     this.painel.style.height = '100%';
 
     setTimeout(() => {
