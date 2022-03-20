@@ -2,6 +2,12 @@
 // @import 'styles/breakpoints.scss';
 @import "src/assets/styles/breakpoints.scss";
 
+@import '~swiper/css/bundle';
+@import '~swiper/scss/navigation';
+@import '~swiper/scss/pagination';
+@import '~swiper/scss/scrollbar';
+
+
 
 * {
   box-sizing: border-box;
