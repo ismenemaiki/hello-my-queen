@@ -4,7 +4,7 @@ import SwiperCore, { Keyboard } from "swiper";
 
 SwiperCore.use([Navigation, Pagination, Keyboard]);
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   modules: [ Navigation, Pagination ],
   navigation: {
     nextEl: '.swiper-button-next',
