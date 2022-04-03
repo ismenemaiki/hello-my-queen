@@ -29,7 +29,7 @@ const routes: Routes = [
           import('./paginas/sobre/sobre.module').then((m) => m.SobreModule),
       },
       {
-        path: 'contato',
+        path: 'contatos',
         loadChildren: () =>
           import('./paginas/contato/contato.module').then((m) => m.ContatoModule),
       },
