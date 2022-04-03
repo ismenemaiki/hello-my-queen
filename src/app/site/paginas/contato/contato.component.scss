@@ -1,14 +1,46 @@
+@import "src/assets/styles/variables.scss";
 
 @media only screen and (min-width: 600px) {
   .container {
-    display: flex;
+    display: grid;
     justify-content: center;
     .main {
-      border: 1px solid red;
-      height: 300px;
-      width: 80%;
       max-width: 980px;
     }
   }
+}
+h1 {
+  font-family: $subtitle;
+}
+.container {
+  padding: 10px;
+}
+input, textarea, button {
+  font-family: $subtitle;
+  border: 0;
+  height: 45px;
+  width: 100%;
+  border-radius: 3px;
+  margin: 10px 0;
 
+}
+input {
+  border: 1px solid rgba(143, 141, 141, 0.568);
+}  ::placeholder {
+  padding-left: 10px;
+}
+textarea {
+  font-size: 16px;
+  height: 150px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid rgba(143, 141, 141, 0.568);
+} ::placeholder {
+  padding-top: 10px;
+}
+button{
+  font-size: 16px;
+  color: $color5;
+  border-radius: 10px;
+  background-color: $color1;
 }
