@@ -1,0 +1,47 @@
+@import "src/assets/styles/variables.scss";
+
+h1 {
+  font-family: $title;
+  font-size: clamp(3.5em, 2em + 6vw, 6em);
+  text-align: center;
+  font-weight: normal;
+}
+h4 {
+  font-family: $subtitle;
+  font-size: clamp(1.25em, .5em + 3vw, 2em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1em;
+  transform: scaleX(1.1);
+  word-spacing: 5px;
+}
+img {
+  z-index: -2;
+}
+.presentation {
+  padding: 18px;
+  .photo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    .cover {
+      width: 90%;
+      transform: rotate(5deg);
+      border: 15px solid $color5;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    .main {
+      width: 80%;
+      max-width: 980px;
+    }
+  }
+}

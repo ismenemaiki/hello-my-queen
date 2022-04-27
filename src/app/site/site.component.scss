@@ -1,0 +1,46 @@
+@import "src/assets/styles/breakpoints.scss";
+
+router-outlet {
+  flex: 1 0 auto;
+}
+.content {
+  display: grid;
+  flex-direction: column;
+}
+p {
+  padding: 10px;
+  background: #aaa;
+  color: white;
+}
+// .c-desktop {
+//   border: 1px solid red;
+//   margin: 50px;
+// }
+.phone-only {
+  // @include for-phone-only { }
+}
+
+.tablet-portait-only {
+  @include for-tablet-portait-only {
+    background: purple;
+    border: 1px solid black;
+  }
+}
+
+.tablet-landscape-only {
+  @include for-tablet-landscape-only {
+    background: purple;
+  }
+}
+
+.desktop-only {
+  @include for-desktop-only {
+    background: purple;
+  }
+}
+
+.big-desktop-up {
+  @include for-big-desktop-up {
+    background: purple;
+  }
+}

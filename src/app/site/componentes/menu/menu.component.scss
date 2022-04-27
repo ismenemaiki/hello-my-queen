@@ -1,0 +1,88 @@
+@import "src/assets/styles/breakpoints.scss";
+@import "src/assets/styles/variables.scss";
+
+a {
+  font-family: $subtitle;
+  color: $color5;
+}
+
+@media only screen and (max-width: 599px) {
+  .desktop {
+    display: none;
+  }
+  .sidepanel {
+    width: 0;
+    position: fixed;
+    top: 0;
+    opacity: 0.9;
+    background: $color2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color5;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .sidepanel .closebtn {
+    color: $color5;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 36px;
+  }
+
+  .menu-bar {
+    font-size: 20px;
+    color: #f2f2f2;
+    padding: 10px 15px;
+    border: none;
+    background: $color1;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: $color1;
+  }
+  .main {
+    width: 80%;
+    max-width: 980px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.phone-only {
+  @include for-phone-only {
+  }
+}
+.tablet-portait-only {
+  @include for-tablet-portait-only {
+  }
+}
+
+.tablet-landscape-only {
+  @include for-tablet-landscape-only {
+  }
+}
