@@ -17,19 +17,31 @@ h4 {
   transform: scaleX(1.1);
   word-spacing: 5px;
 }
+img {
+  z-index: -2;
+}
 .presentation {
   padding: 18px;
+  .photo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    .cover {
+      width: 90%;
+      transform: rotate(5deg);
+      border: 15px solid $color5;
+    }
+  }
 }
+
 @media only screen and (min-width: 600px) {
   .container {
     display: flex;
     justify-content: center;
     .main {
-      border: 1px solid red;
-      height: 300px;
       width: 80%;
       max-width: 980px;
     }
   }
-
 }

@@ -1,0 +1,28 @@
+@import "src/assets/styles/breakpoints.scss";
+@import "src/assets/styles/variables.scss";
+
+footer {
+  flex-shrink: 0;
+  // height: 100%;
+  background-color: $color1;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+div {
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid $color5;
+  margin: 18px 8px 0 8px;
+}
+p {
+  color: $color5;
+  margin: 8px 0;
+}
