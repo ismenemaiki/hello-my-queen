@@ -25,12 +25,10 @@ img {
   .photo {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
 
     .cover {
-      width: 90%;
-      transform: rotate(5deg);
-      border: 15px solid $color5;
+      width: 82%;
+      border: 12px solid $color5;
     }
   }
 }
