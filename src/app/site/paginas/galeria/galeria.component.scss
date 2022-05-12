@@ -22,19 +22,20 @@
   .container {
     display: flex;
     justify-content: center;
-    .main {
-      height: 530px;
-      border: 1px  solid rgb(235, 55, 160);
-      width: 98%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    // .main {
+    //   // height: 530px;
+    //   // border: 1px  solid rgb(235, 55, 160);
+    //   // width: 98%;
+    //   // display: flex;
+    //   // justify-content: center;
+    //   align-items: center;
+    // }
   }
   .slider {
     // border: 1px solid blue;
-    width: 300px;
+    width: 280px;
     height: 430px;
+    margin-bottom: 100px;
   }
 }
 
