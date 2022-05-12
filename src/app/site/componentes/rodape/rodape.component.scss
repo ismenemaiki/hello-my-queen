@@ -3,7 +3,6 @@
 
 footer {
   flex-shrink: 0;
-  // height: 100%;
   background-color: $color1;
   bottom: 0 !important;
   display: flex;
@@ -15,14 +14,13 @@ section {
   display: flex;
   justify-content: space-around;
 }
-div {
+img {
   height: 40px;
   width: 40px;
-  border-radius: 10px;
-  border: 1px solid $color5;
-  margin: 18px 8px 0 8px;
+  margin: 9px;
 }
 p {
+  font-size: clamp(.5em, 1em + 1.25vw, 2em);
   color: $color5;
-  margin: 8px 0;
+  margin-top: 10px;
 }
