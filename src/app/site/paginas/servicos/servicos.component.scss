@@ -1,17 +1,36 @@
+@import "src/assets/styles/variables.scss";
 
+h1 {
+  font-family: $subtitle;
+  font-size: clamp(1.5em, 1em + 3vw, 4em);
+  text-align: center;
+  font-weight: normal;
+  padding: 22px 0 10px 0;
+  color: $color3;
+}
+p {
+  font-family: $subtitle;
+  font-size: clamp(.5em, .7em + 1.25vw, 2em);
+  text-align: center;
+  line-height: 1.75em;
+}
+h3 {
+  font-family: $subtitle;
+  font-size: clamp(.5em, .7em + 1.25vw, 2em);
+  text-align: right;
+  margin-right: 18px;
+  margin-bottom: 8px;
+}
 .main {
-  height: 530px;
+  padding: 10px 25px;
 }
 @media only screen and (min-width: 600px) {
   .container {
     display: flex;
     justify-content: center;
     .main {
-      border: 1px solid red;
-      height: 300px;
-      width: 80%;
+      width: 60%;
       max-width: 980px;
     }
   }
-
 }
